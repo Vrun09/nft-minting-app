@@ -66,9 +66,9 @@ export const ResponsiveWrapper = styled.div`
 `;
 
 export const StyledLogo = styled.img`
-  width: 200px;
+  width: 100px;
   @media (min-width: 767px) {
-    width: 300px;
+    width: 200px;
   }
   transition: width 0.5s;
   transition: height 0.5s;
@@ -79,9 +79,9 @@ export const StyledImg = styled.img`
   border: 4px dashed var(--secondary);
   background-color: var(--accent);
   border-radius: 100%;
-  width: 200px;
-  @media (min-width: 900px) {
-    width: 250px;
+  width: 500px;
+  @media (min-width: 1000px) {
+    width: 300px;
   }
   @media (min-width: 1000px) {
     width: 300px;
@@ -199,10 +199,10 @@ function App() {
         flex={1}
         ai={"center"}
         style={{ padding: 24, backgroundColor: "var(--primary)" }}
-        image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
+        image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.gif" : null}
       >
         <a href={CONFIG.MARKETPLACE_LINK}>
-          <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
+           <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
         </a>
         <s.SpacerSmall />
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
